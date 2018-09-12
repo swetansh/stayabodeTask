@@ -1,0 +1,81 @@
+@import './trackWidget.less';
+
+.banner-wrapper {
+    font-family: 'DCB';
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    .header {
+        font-size: 0px;
+        left: 0px;
+        right: 0px;
+        margin-top: 10px;
+        z-index: 1;
+        color: #fff;
+        .header-left {
+            display: inline-block;
+            width: 20%;
+            text-align: left;
+            vertical-align: middle;
+        }
+        .header-right {
+            display: inline-block;
+            width: 50%;
+            float: right;
+        }
+        .header-item {
+            display: inline-block;
+            padding: 10px 30px;
+            font-size: 20px;
+            text-transform: uppercase;
+            cursor: pointer;
+            vertical-align: middle;
+            &.logo {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .logo-wrapper {
+        position: absolute;
+        display: inline-block;
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .main-header {
+        position: absolute;
+        top: 80%;
+        left: 5%;
+        color: #fff;
+        text-transform: uppercase;
+        .first-line {
+            font-size: 30px;
+        }
+
+        .second-line {
+            font-size: 96px;
+            margin-top: -20px;
+        }
+
+        .third-line {
+            font-size: 32px;
+            margin-top: -20px;
+        }
+    }
+
+    .request-info {
+        position: fixed;
+        right: -30px;
+        top: 50%;
+        transform: rotateZ(-90deg);
+        font-size: 20px;
+        text-transform: uppercase;
+        background: #e6e6e6;
+        padding: 10px 15px 3px;
+        cursor: pointer;
+    }
+}
